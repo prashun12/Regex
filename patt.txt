@@ -1,0 +1,12 @@
+#!/bin/bash -x
+read -p "Enter the pin code: " value
+
+pattern="^[A-Z][1-9]{@}{3}[0-9]{3}$"
+
+if [[ $value =~ $pattern ]]
+then
+      echo "yes"
+else
+      echo "no"
+
+fi
